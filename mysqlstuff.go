@@ -8,9 +8,7 @@ import (
 	"net/http"
 )
 
-//type ReleaseTable struct {
-//	relTicket string
-//	cmTicket  string
+//type dbTable struct {
 //	startTime string
 //	endTime   string
 //	progress  string
