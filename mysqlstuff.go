@@ -18,11 +18,11 @@ import (
 //}
 
 func main() {
-	http.HandleFunc("/releaseTable", releaseTable)
+	http.HandleFunc("/dbTable", dbTable)
 	http.ListenAndServe(":9002", nil)
 }
 
-func releaseTable(w http.ResponseWriter, r *http.Request) {
+func dbTable(w http.ResponseWriter, r *http.Request) {
 	//open command to connect to db.. need to hide password
 	db, err := sql.Open("mysql", "<user>:<pw>@tcp(localhost:3306)/dbname")
 	if err != nil {
